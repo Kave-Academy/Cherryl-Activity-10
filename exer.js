@@ -1,9 +1,19 @@
+
+
+
 function run() {
 
 
-    var student = { name : "David Rayy", 
-            sclass : "VI",
-          rollno : 12 }
-          document.getElementById("output").innerHTML = Object.getOwnPropertyNames(student);
-          console.log(Object.getOwnPropertyNames(student));
+  var sweet = {Cake : "Red Velvet", 
+  Cookies : "Dark cookies", 
+  IceCream: "Coffee Flavor" };
+
+
+          // Returns an array of properties by using Object.getOwnPropertyNames(student)
+          document.getElementById("output").innerHTML = Object.getOwnPropertyNames(sweet);
+          console.log(Object.getOwnPropertyNames(sweet));
+
+          
+
+
 }

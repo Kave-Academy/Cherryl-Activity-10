@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffaf00+0,bb02ff+100,2989d8+100,2989d8+100 */
+  background: #ffaf00; /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    #ffaf00 0%,
+    #bb02ff 100%,
+    #2989d8 100%,
+    #2989d8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    #ffaf00 0%,
+    #bb02ff 100%,
+    #2989d8 100%,
+    #2989d8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #ffaf00 0%,
+    #bb02ff 100%,
+    #2989d8 100%,
+    #2989d8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf00', endColorstr='#2989d8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+header .logo1 {
+  position: relative;
+  max-width: 150px;
+  background-color: transparent;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  margin: 80px;
+}
+
+header ul li a {
+  display: inline-block;
+  color: blac;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  position: relative;
+  width: 380px;
+  height: 420px;
+  background: white;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container:hover .card {
+  filter: blur(10px);
+  transform: scale(0.9);
+}
+
+.container .card:hover {
+  filter: blur(0px);
+  transform: scale(1.1);
+}
+
+.container .card .circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #ffaf00;
+  clip-path: circle(210px at center 0);
+  text-align: center;
+}
+
+.container .card .circle h2 {
+  color: white;
+  padding: 20px;
+}
+
+.container .card .content {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.container .card .content p {
+  color: #666;
+}
+
+.container .card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffaf00;
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.thumb {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thumb li {
+  list-style: none;
+}
+
+.thumb li a {
+  display: inline-block;
+  margin: 30px 10px;
+  margin-right: 50px;
+  transform: scale(2);
+}
+
+.thumb li a:hover {
+  color: white;
+}
